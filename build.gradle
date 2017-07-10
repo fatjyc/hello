@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testCompile "junit:junit:4.12"
+}
+
+mainClassName = "net.coding.demo.Application"
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'net.coding.demo.Application'
+    }
+}
+
+run {
+    args = ["chinese"]
+}
