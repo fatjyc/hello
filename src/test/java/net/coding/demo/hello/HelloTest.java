@@ -22,4 +22,9 @@ public class HelloTest {
     public void testChineseHello() {
         Assert.assertEquals(Hello.say("chinese"), "你好，世界！");
     }
+
+    @Test
+    public void testJapaneseHello() {
+        Assert.assertEquals(Hello.say("japanese"), "こんにちは世界!");
+    }
 }
