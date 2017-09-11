@@ -16,10 +16,14 @@ public class Translator {
     }
 
     public String say() {
-        if (language.equals("chinese")) {
-            return "你好，世界！";
-        } else {
-            return "Hello World!";
+        switch (language) {
+            case "chinese":
+                return "你好，世界！";
+            case "japanese":
+                return "こんにちは世界!";
+            case "english":
+            default:
+                return "Hello World!";
         }
     }
 
