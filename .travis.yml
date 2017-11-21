@@ -1,4 +1,10 @@
 language: java
-
-install:
-    ./gradlew test
+install: "./gradlew test"
+script: "./gradlew build"
+deploy:
+  provider: releases
+  api_key:
+    secure: f4w58You3pH8J7cvV46p7+EOkJlH470VUGA05ZZ+CRRhfs1IhaWwgkx39o2uHRRdSwKut7TnigPKmI26m4GX80k/0teJ7qPgKQCDj4M4Li4Q4bg7Rv/r9o2rPJHRqey9qFNxdoHTg3O6VYVJSLWz59ZVhqkwVP6l8z8KDuaU/2bMCCkUGhEhMxge8eaQZSMFD33CiS5UIxuDkenW0nQfWTodWf7Bk+X/7Y8Ee1RFmuK6QIWu5yM5FD2Lpo95Po/ZE4P6TDHG6xAVLqm+2cfdfkQ4RgOFIgig89UZjgPVZ5y0/rMIrIdAP7mzB2V0rzEkmkXloSSFDOZVYXgzCl9FZ+aPzyJbTSy6IjeJEq5fzdT4gTg35fxEK8dQa6Kw7a1bHuXvwg3Z6s4N84y8xTslfuZpPbZAMddHcPI1z8D1j2GxJTQ8XUYBN3ytr7mPp6WoRlBHVICgjYJ0Mdt6PSpYJ5v4VCvFjZ+GbsNbqrYyUXJwTqeYAoUIWrhfM/DIjBU3pwOX6YpPQjJP/3TYKpJ5RZbfSVqyNcyaF2R0J4FUOjFqIkOlfWuPESSp6dRrd95hE6fa5CQErevYgUpb5T5gK2bkaok0BS398JJfS180Yn//VvXZIQeFsfV0ieVWuHGJGKu6YJtm1BD718KrE1MhbnacoREDrVNvmztnQcvN5h4=
+  file: build/libs/hello.jar
+  on:
+    repo: fatjyc/hello
