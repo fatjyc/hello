@@ -22,6 +22,9 @@ jar {
     }
 }
 
+version = '0.0.1-SNAPSHOT'
+group = 'net.coding.demo'
+
 run {
     args = ["chinese"]
 }
