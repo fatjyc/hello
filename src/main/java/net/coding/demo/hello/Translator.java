@@ -21,6 +21,8 @@ public class Translator {
                 return "你好，世界！";
             case "japanese":
                 return "こんにちは世界!";
+            case "french":
+                return "Bonjour le monde!";
             case "english":
             default:
                 return "Hello World!";

@@ -27,4 +27,9 @@ public class HelloTest {
     public void testJapaneseHello() {
         Assert.assertEquals(Hello.say("japanese"), "こんにちは世界!");
     }
+
+    @Test
+    public void testFrenchHello() {
+        Assert.assertEquals(Hello.say("french"), "Bonjour le monde!");
+    }
 }
